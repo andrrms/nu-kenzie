@@ -1,0 +1,47 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard__body {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+
+.dashboard__side {
+  height: 100%;
+}
+
+.dashboard__container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+  .dashboard__body {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 40px;
+    flex-direction: row;
+  }
+
+  .dashboard__side {
+    position: sticky;
+    top: 128px;
+  }
+
+  .main__container {
+    flex: 1;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .dashboard__body {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+}

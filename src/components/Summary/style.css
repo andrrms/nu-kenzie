@@ -1,0 +1,37 @@
+.summary {
+  padding: 25px;
+  border: 2px solid var(--color-gray-100);
+  border-radius: 8px;
+  
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.summary__title {
+  font-family: 'Nunito', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.summary__value {
+  float: right;
+}
+
+.summary__value.value--left {
+  color: var(--color-secondary);
+}
+
+.summary__value.value--debt {
+  color: var(--color-primary);
+}
+
+.summary__text {
+  color: var(--color-gray-300);
+  font-family: 'Nunito', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

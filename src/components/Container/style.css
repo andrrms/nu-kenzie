@@ -1,0 +1,35 @@
+div.container__element {
+  width: 90%;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+}
+
+div.container__element.container--horizontal {
+  flex-direction: row;
+  align-items: center;
+}
+
+div.container__element.container--no-margin,
+div.container__element.container--no-margin-mobile {
+  width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  div.container__element.container--small-margin,
+  div.container__element.container--no-margin-mobile {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  div.container__element,
+  div.container__element.container--no-margin-mobile {
+    width: 70%;
+  }
+
+  div.container__element.container--small-margin {
+    width: 90%;
+  }
+}

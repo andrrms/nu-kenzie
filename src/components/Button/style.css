@@ -1,0 +1,47 @@
+.button {
+  background-color: var(--color-gray-200);
+  color: var(--color-gray-300);
+
+  font-family: "Inter", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+
+  border: none;
+  border-radius: 8px;
+
+  cursor: pointer;
+  padding: 10px 15px;
+  transition: 0.2s ease background-color, 0.2s ease color;
+}
+
+.button.selected {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+.button:hover {
+  background-color: var(--color-gray-300);
+  color: var(--color-gray-100);
+}
+
+.button.selected:hover {
+  background-color: var(--color-primary-2);
+  color: var(--color-gray-100);
+}
+
+.button.button--primary {
+  font-size: 16px;
+  padding: 15px 20px;
+
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+.button.button--primary:hover {
+  background-color: var(--color-primary-2);
+  color: var(--color-gray-100);
+}
+
+.button.button--extend {
+  width: 100%;
+}
